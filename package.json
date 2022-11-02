@@ -1,0 +1,26 @@
+{
+  "name": "zx-ts-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "exports": "./src/main.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run-once": "node --loader ts-node/esm --no-warnings ./src/main.ts",
+    "dev": "nodemon --exec npm run run-once"
+  },
+  "packageManager": "pnpm@6.11.0",
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "only-allow": "^1.1.1",
+    "zx": "^7.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  }
+}
